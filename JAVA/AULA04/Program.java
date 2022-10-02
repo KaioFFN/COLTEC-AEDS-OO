@@ -9,7 +9,7 @@ public class Program {
         gerente.RG = "SP-000.000.000";
        
         empregado = new Funcionario();
-        empregado.nome = "Felipe";
+        empregado.nome = "Jose";
         empregado.departamento = "RH";
         empregado.salario = 1250.50;
         empregado.data_entrada = "01/10/2022";
