@@ -10,5 +10,6 @@ public class tabela {
             }    
           System.out.println( );
         }
+        
     } 
 }

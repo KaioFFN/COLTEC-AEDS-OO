@@ -12,6 +12,7 @@ public class Regra {
                 x = 3 * x + 1;
             } 
         System.out.print("-> " + x);          
-        } while (x != 1);   
+        } while (x != 1);  
+         
     }
 }

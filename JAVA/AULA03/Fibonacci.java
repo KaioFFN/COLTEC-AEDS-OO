@@ -8,6 +8,7 @@ public class Fibonacci {
          num2 = num + num2 ;
          num = num2 - num;
       } while (num2 < 100);
-      System.out.println(num2);   
+      System.out.println(num2);  
+       
    } 
 }
