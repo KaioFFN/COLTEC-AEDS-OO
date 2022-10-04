@@ -1,6 +1,7 @@
 package JAVA.AULA04;
 
-public class Data {
+public class Data 
+{
         int dia;
         int mes;
         int ano;
