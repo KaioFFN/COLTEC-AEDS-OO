@@ -2,11 +2,11 @@ package JAVA.AULA04;
 // Aqui temos uma classe para pegarmos os dados dos usuarios
 public class Funcionario 
 {
-    String nome; 
-    String departamento;
-    double salario;
-    Data dataEntrada; 
-    String RG;
+    private String nome; 
+    private String departamento;
+    private double salario;
+    private Data dataEntrada; 
+    private String RG;
     //Aqui é para imprimir esses dados do funcionario 
     void DadosFuncionario()
     {
