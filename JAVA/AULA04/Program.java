@@ -6,7 +6,7 @@ public class Program
         Funcionario empregado , gerente , func;
         //Inserindo os dados dos funcionarioss
         gerente = new Funcionario("Fernando", "Gerente", 30000 , 10 , 8 , 1999 , "RJ-157.033.171");
-        empregado = new Funcionario("Kaio", "Caixa", 10000 , 9 , 12  , 2005 , "MG-015.287.478");
+        empregado = new Funcionario("Fernando", "Gerente", 30000 , 10 , 8  , 1999 , "RJ-157.033.171");
         func = gerente;
         //Lendo os dados inseridos
         gerente.DadosFuncionario();
@@ -14,7 +14,15 @@ public class Program
         //Aqui comprara se é o mesmo funcionario vendo se esta salvo no mesmo lugar da memoria 
         if (func == gerente) 
         {
-            System.out.println("A");
+            System.out.println("SALVO NO MESMO LUGAR");
+        }
+        //Mesmos dados porem não é uma compraração de damos mas sim de local que foi salvo
+        if(gerente == empregado)
+        {
+            System.out.println("SALVO NO MESMO LUGAR");
+        }else
+        {
+            System.out.println("NÃO SALVO NO MESMO LUGAR");
         }
     }
 }
