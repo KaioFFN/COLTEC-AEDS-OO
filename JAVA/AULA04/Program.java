@@ -1,16 +1,12 @@
 package JAVA.AULA04;
-
-import JAVA.AULA04.Funcionario;;
-
 public class Program 
 {
     public static void main(String[] args) 
     {
         Funcionario empregado , gerente , func;
-        Data data = new Data();
-        gerente = new Funcionario("Kaio", "RH", 2802 , data , "MG-000.000.000");
+        gerente = new Funcionario("Fernando", "Gerente", 2802 , 10 , 8 , 1999 , "RJ-157.033.171");
         func = gerente;
-        empregado = new Funcionario("Kaio", "RH", 2802 , data , "MG-000.000.000");
+        empregado = new Funcionario("Kaio", "Caixa", 2802 , 9 , 12  , 2005 , "MG-015.287.478");
         gerente.DadosFuncionario();
         empregado.DadosFuncionario();
             if (func == gerente) 

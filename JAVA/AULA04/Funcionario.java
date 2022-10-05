@@ -1,9 +1,7 @@
 package JAVA.AULA04;
 
-import JAVA.AULA04.Data;
-
-public class Funcionario {
-
+public class Funcionario 
+{
     String nome; 
     String departamento;
     double salario;
@@ -22,12 +20,15 @@ public class Funcionario {
         System.out.println("Entrou na empresa " + dataEntrada.dia + "/" + dataEntrada.mes + "/" + dataEntrada.ano);
         System.out.println("RG do funcionario " + RG);
     }
-    public Funcionario(String nome, String departamento, double salario, Data dataEntrada, String rG) {
-        new Data();
+    public Funcionario(String nome, String departamento, double salario , int dia , int mes  , int ano, String rG) 
+    {
+        dataEntrada = new Data();
         this.nome = nome;
         this.departamento = departamento;
         this.salario = salario;
-        this.dataEntrada = dataEntrada;
+        this.dataEntrada.dia = dia;
+        this.dataEntrada.mes = mes;
+        this.dataEntrada.ano = ano;
         this.RG = rG;
     }
 }
