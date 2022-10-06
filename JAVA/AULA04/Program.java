@@ -12,17 +12,18 @@ public class Program
         gerente.DadosFuncionario();
         empregado.DadosFuncionario();
         //Aqui comprara se é o mesmo funcionario vendo se esta salvo no mesmo lugar da memoria 
+        System.out.println();
         if (func == gerente) 
         {
-            System.out.println("SALVO NO MESMO LUGAR");
+            System.out.println("FUNC E GERENTE SALVO NO MESMO LUGAR\n");
         }
         //Mesmos dados porem não é uma compraração de damos mas sim de local que foi salvo
         if(gerente == empregado)
         {
-            System.out.println("SALVO NO MESMO LUGAR");
+            System.out.println("GERENTE E EMPREGADO SALVO NO MESMO LUGAR\n");
         }else
         {
-            System.out.println("NÃO SALVO NO MESMO LUGAR");
+            System.out.println("GERENTE E EMPREGADO NÃO SALVO NO MESMO LUGAR\n");
         }
     }
 }
