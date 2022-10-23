@@ -1,4 +1,7 @@
 package JAVA.AULA04;
+
+import java.util.Scanner;
+
 // Aqui temos uma classe para pegarmos os dados dos usuarios
 public class Funcionario 
 {
@@ -29,6 +32,26 @@ public class Funcionario
         this.dataEntrada.mes = mes;
         this.dataEntrada.ano = ano;
         this.RG = rG;
+    }
+    public Funcionario()
+    {
+        Scanner input = new Scanner(System.in);
+        dataEntrada = new Data();
+        System.out.print("Nome do funcionario: ");
+        nome = input.nextLine();
+        System.out.print("Nome do departamento: ");
+        departamento = input.nextLine();
+        System.out.print("Salario funcionario: ");
+        salario = input.nextDouble();
+        System.out.print("Dia de entrada: ");
+        dataEntrada.dia = input.nextInt();
+        System.out.print("Mes de entrada: ");
+        dataEntrada.mes = input.nextInt();
+        System.out.print("Ano de entrada: ");
+        dataEntrada.ano = input.nextInt();
+        System.out.print("RG funcionario ");
+        RG = input.next();
+        System.out.println("");
     }
 }
 

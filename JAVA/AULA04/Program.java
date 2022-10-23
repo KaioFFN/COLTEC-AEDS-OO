@@ -5,7 +5,7 @@ public class Program
     {
         Funcionario empregado , gerente , func;
         //Inserindo os dados dos funcionarioss
-        gerente = new Funcionario("Fernando", "Gerente", 30000 , 10 , 8 , 1999 , "RJ-157.033.171");
+        gerente = new Funcionario();
         empregado = new Funcionario("Fernando", "Gerente", 30000 , 10 , 8  , 1999 , "RJ-157.033.171");
         func = gerente;
         //Lendo os dados inseridos
