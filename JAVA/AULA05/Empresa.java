@@ -8,8 +8,6 @@ public class Empresa {
         int numfuncionarios = 0;
     void DadosEmpresa()
     {
-        
-        Empresa empresa = new Empresa();
         Scanner input = new Scanner(System.in);
         System.out.print("Digite o nome da empresa: ");
         this.nomeEmpresa = input.next();
@@ -17,18 +15,19 @@ public class Empresa {
         this.cnpj = input.next();
         System.out.println("Digite o numero de funcionarios: ");
         numfuncionarios = input.nextInt();
-        empresa.funcionario = new Funcionario[numfuncionarios];
-        for (int i = 0; i < empresa.funcionario.length; i++) {
-            empresa.funcionario[i] = new Funcionario();    
+        funcionario = new Funcionario[numfuncionarios];
+        for (int i = 0; i < funcionario.length; i++) {
+            this.funcionario[i] = new Funcionario();    
         }
     }
     void printDadosFuncionarios(){
-        Empresa empresa = new Empresa();
+        
         System.out.println();
         System.out.println("Nome Empresa: " +  nomeEmpresa);
         System.out.println("CNPJ: " + cnpj);
        for (int i = 0; i < numfuncionarios; i++) {
-        empresa.funcionario[i].DadosFuncionario();
+        System.out.print("Funcionario posição: " + i);
+        funcionario[i].DadosFuncionario();
     }
     }
 }
